@@ -5,5 +5,12 @@ Patterns:
 - Screenplay
 
 Demos:
-- Multi Factor Authentication (MFA) testing using timed one time passwords (TOTP).
+- Authentication testing using Multi Factor Authentication (MFA) methods.
 - API testing
+
+How to run:
+
+Demo Websites and Applications used:
+- https://authenticationtest.com/
+- https://seleniumbase.io/
+- https://the-internet.herokuapp.com/
