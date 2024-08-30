@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "ui": "dotenvx run -- npx playwright test --ui",
+    "demo-mfa-tests": "dotenvx run -- npx playwright test demos/mfa/login-mfa.spec.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.46.0",
+    "@types/jquery": "^3.5.30",
     "@types/node": "^22.2.0"
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.9.0",
     "node-2fa": "^2.0.3"
   }
 }
