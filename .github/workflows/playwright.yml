@@ -18,7 +18,9 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: dotenvx run -- npx playwright test demos/mfa/login-mfa.spec.ts
+      env: 
+        DOTENV_PRIVATE_KEY_CI: ${{ secrets.DOTENV_PRIVATE_KEY_CI }}
     - uses: actions/upload-artifact@v4
       if: always()
       with:
